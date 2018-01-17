@@ -1,0 +1,60 @@
+$login-background: url(../../assets/images/bg.jpg);
+$logo-big: url(../../assets/images/logo-big.png);
+$login-btn-color: #9fd533;
+$login-btn-hover-color: #86b300;
+
+/**
+ * Login scene
+ */
+.Login {
+
+    /**
+     * Fullscreen background image
+     */
+    background: $login-background no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    min-height: 100vh;
+
+    /**
+     * Center contents
+     */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+
+    /**
+     * Contents
+     */
+
+    .Logo {
+        background: $logo-big no-repeat;
+        width: 246px;
+        height: 64px;
+    }
+
+    .LoginBtn {
+        background-color: $login-btn-color;
+
+        padding: 20px 80px;
+        margin-top: 30px;
+        
+        color: #ffffff;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+
+        transition: background-color 0.1s;
+
+        border-radius: 5px;
+      
+        &:hover {
+            background-color: $login-btn-hover-color;
+
+            outline: none;
+        }
+    }
+}
